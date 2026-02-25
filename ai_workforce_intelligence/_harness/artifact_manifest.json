@@ -1,0 +1,355 @@
+{
+  "generated_at": "2026-02-25T05:55:24.340262",
+  "artifacts": [
+    {
+      "path": "build/iteration_04_fix.txt",
+      "sha256": "bd66ee9d12f54433fea9aee70ae6abb6a90a336f33ae387ae9e6cbec29d8ceb4",
+      "size": 70194
+    },
+    {
+      "path": "build/iteration_01_build.txt",
+      "sha256": "5bfb0af1e47f135a52a1efc178809a98292a606e03d37974c0c69edc25473bce",
+      "size": 58870
+    },
+    {
+      "path": "build/iteration_02_build.txt",
+      "sha256": "93544add38e5327775bfe224bcbcbed1fee18a172ce23e56761549b6542cbffb",
+      "size": 52414
+    },
+    {
+      "path": "build/iteration_02_fix.txt",
+      "sha256": "93544add38e5327775bfe224bcbcbed1fee18a172ce23e56761549b6542cbffb",
+      "size": 52414
+    },
+    {
+      "path": "build/iteration_04_build.txt",
+      "sha256": "bd66ee9d12f54433fea9aee70ae6abb6a90a336f33ae387ae9e6cbec29d8ceb4",
+      "size": 70194
+    },
+    {
+      "path": "build/iteration_03_fix.txt",
+      "sha256": "eb779495c6eae2ee55c33c3d33b19d54e41099c4b0bf2814f067d44a61c3c89b",
+      "size": 71143
+    },
+    {
+      "path": "build/iteration_03_build.txt",
+      "sha256": "eb779495c6eae2ee55c33c3d33b19d54e41099c4b0bf2814f067d44a61c3c89b",
+      "size": 71143
+    },
+    {
+      "path": "build/iteration_01_artifacts/build_state.json",
+      "sha256": "31e5caed0a42a6baa765dfdac533c0914ee8d94038ab2eb3d5d6c7ed320614ab",
+      "size": 115
+    },
+    {
+      "path": "build/iteration_01_artifacts/artifact_manifest.json",
+      "sha256": "f8638aeed5f053faf844783f91f3d68a31bee587c59c0e0ae0ed4562c5c5dae9",
+      "size": 2471
+    },
+    {
+      "path": "build/iteration_01_artifacts/business/package.json",
+      "sha256": "4ca5d672405acfad5a8a41520c781e7b8ff734fe74793d2020dd1c8681d3535c",
+      "size": 522
+    },
+    {
+      "path": "build/iteration_01_artifacts/business/config/kpis.js",
+      "sha256": "f77637eafc703ccaf9d557568b24868fc2d3c3eca436a1e70016719be8ac1b6d",
+      "size": 2818
+    },
+    {
+      "path": "build/iteration_01_artifacts/business/tests/kpi_calculation.test.js",
+      "sha256": "5946ac0d50f105dce36b311591d4ce6b23bab33176a75f90e4fa8ae6c4876ad0",
+      "size": 1823
+    },
+    {
+      "path": "build/iteration_01_artifacts/business/models/Client.js",
+      "sha256": "094b7f0522fee4a379f55c340cc69dc4a90a38f5356d16dc0b86b3f76582ccd2",
+      "size": 1571
+    },
+    {
+      "path": "build/iteration_01_artifacts/business/models/Assessment.js",
+      "sha256": "dc80be36dd14f05a481199edc96cbca2a866cc12d726036542173ffe61eba51d",
+      "size": 2014
+    },
+    {
+      "path": "build/iteration_01_artifacts/business/models/Report.js",
+      "sha256": "1e27f6028463f235b9d6210953f7a58ae592fa504b3b87a1941680b8a5c9ef41",
+      "size": 2826
+    },
+    {
+      "path": "build/iteration_01_artifacts/business/components/ReportPreview.jsx",
+      "sha256": "73c6b233b85e8d246635f7e440bcceea8d12f71576db85818bf4010b39970235",
+      "size": 7279
+    },
+    {
+      "path": "build/iteration_01_artifacts/business/components/ExecutiveDashboard.jsx",
+      "sha256": "8df919fed4f0d23261ddbcaf8fac2c101f06f131b6de1154fec365b8d105724a",
+      "size": 6648
+    },
+    {
+      "path": "build/iteration_01_artifacts/business/components/KPIDataEntry.jsx",
+      "sha256": "d41e3a4c00dfccfc79d96d2ee014ef9e4fdfc599320a7a44c60f253dee5e492f",
+      "size": 5009
+    },
+    {
+      "path": "build/iteration_01_artifacts/business/components/ClientProfile.jsx",
+      "sha256": "ef150140492624974d275a4b23ae1b9350a214ec1399b7af502a5790db93cb0f",
+      "size": 5236
+    },
+    {
+      "path": "build/iteration_01_artifacts/business/services/ReportGenerationService.js",
+      "sha256": "893ee14bee99c2bca04a243b38d2de81f28032113d0042d3e2711731cf913b07",
+      "size": 6378
+    },
+    {
+      "path": "build/iteration_01_artifacts/business/services/WorkdayService.js",
+      "sha256": "c506744b5a85d11233aaa7de43cf1c51a0c94bf4ff677a7547cf26e1afd2b5f2",
+      "size": 1985
+    },
+    {
+      "path": "build/iteration_01_artifacts/business/services/BambooHRService.js",
+      "sha256": "5ed865b8bbf5be2394e2a34dbcf3debd0c94c807bde4d98fdaaa3389296a5f75",
+      "size": 2157
+    },
+    {
+      "path": "build/iteration_01_artifacts/business/services/KPICalculationService.js",
+      "sha256": "745e89e8416f7591632efda415958a3c2c5a389064f83bfdefa2bd5b942cba7a",
+      "size": 5584
+    },
+    {
+      "path": "build/iteration_03_artifacts/build_state.json",
+      "sha256": "b55b48117d3cd19ba99c4f23da02b05d68d47c1419495dc447c511ed0f5c4b28",
+      "size": 110
+    },
+    {
+      "path": "build/iteration_03_artifacts/artifact_manifest.json",
+      "sha256": "d6d396a7331799b23378d8ce94c2824dda41ce9c3e4a0c8c45a85184b2474008",
+      "size": 2316
+    },
+    {
+      "path": "build/iteration_03_artifacts/business/config/features.json",
+      "sha256": "c0c6964192fe6d2b389618e492515a56fc635be4c576e7f520849933cda9a545",
+      "size": 1822
+    },
+    {
+      "path": "build/iteration_03_artifacts/business/tests/data_input_service.test.js",
+      "sha256": "c4b1843b82c38dcbbd63c584a9494eb539ef4464650105a9af0bf75fb4114da4",
+      "size": 8984
+    },
+    {
+      "path": "build/iteration_03_artifacts/business/tests/kpi_scoring_engine.test.js",
+      "sha256": "2805ca7f125b79ffaf8c3c302fad9727083acc715e15e663d6878532b050792e",
+      "size": 7718
+    },
+    {
+      "path": "build/iteration_03_artifacts/business/tests/report_generator.test.js",
+      "sha256": "007c83c3227800aba152209bac578715d5693720cd677fc61070e34f08426a83",
+      "size": 8154
+    },
+    {
+      "path": "build/iteration_03_artifacts/business/models/Client.js",
+      "sha256": "01d8984e286866805546e0212004ba2306417919ec284f746af43aba9e8da334",
+      "size": 1089
+    },
+    {
+      "path": "build/iteration_03_artifacts/business/models/Report.js",
+      "sha256": "cae8e286e3e0faa9ba6b5985765914abd6df33a0c6e858e7f51c80cf2ab48fcf",
+      "size": 1197
+    },
+    {
+      "path": "build/iteration_03_artifacts/business/models/KPIData.js",
+      "sha256": "218312750b9c029baa453feaa32b7fb25e70f685236679bbb16d6946c62abbb8",
+      "size": 1239
+    },
+    {
+      "path": "build/iteration_03_artifacts/business/components/ClientDashboard.jsx",
+      "sha256": "d4f7cbb7f5b576da9ce2f5d7c79c0d45ffdcb917272c4468d97ca5d5e0ad6687",
+      "size": 6128
+    },
+    {
+      "path": "build/iteration_03_artifacts/business/components/KPIInputForm.jsx",
+      "sha256": "9c7b7e118a8a700d820832056d8229aedeb915d9e8aed9067ad5a96eadb9f4e5",
+      "size": 8715
+    },
+    {
+      "path": "build/iteration_03_artifacts/business/components/ReportViewer.jsx",
+      "sha256": "81407538239af167f7eedda65c7cd9d7190ae915bb33ac12e45270d82986465e",
+      "size": 10432
+    },
+    {
+      "path": "build/iteration_03_artifacts/business/services/ReportGenerator.js",
+      "sha256": "bfed477da59b46b3a9b6b90166178394b5990ede4064790113b01e896915178b",
+      "size": 5102
+    },
+    {
+      "path": "build/iteration_03_artifacts/business/services/DataInputService.js",
+      "sha256": "da4841a7d4e485a42f198a325d3d6ee0d8ee05fda652090ea2506539443e9f95",
+      "size": 3770
+    },
+    {
+      "path": "build/iteration_03_artifacts/business/services/KPIScoringEngine.js",
+      "sha256": "8d891b258bf913dedfa173877f4abb315870dcad3aae5f1f8f93468383120916",
+      "size": 4844
+    },
+    {
+      "path": "build/iteration_04_artifacts/build_state.json",
+      "sha256": "b6dd278164a785b2e29594910c4d3d0e2adf74fbdcb234f63014bf4c9941351b",
+      "size": 115
+    },
+    {
+      "path": "build/iteration_04_artifacts/artifact_manifest.json",
+      "sha256": "163d71bbec0d45893a262c282da5b3c67f55998464bd1b206c3ee2eb5e9f2775",
+      "size": 2128
+    },
+    {
+      "path": "build/iteration_04_artifacts/.env.example",
+      "sha256": "31de5c60cecdb68a3d6a1c8929662fa47dc0238e9fc585d8044e20870489b504",
+      "size": 1196
+    },
+    {
+      "path": "build/iteration_04_artifacts/business/README-INTEGRATION.md",
+      "sha256": "db667490ce9d26b91ad5b43b6c45e533066d229c6e46578c5e9db82b9ea4f991",
+      "size": 927
+    },
+    {
+      "path": "build/iteration_04_artifacts/business/package.json",
+      "sha256": "3280a7520519fa90bb3867351c506e951179a05361dc6278423dbcff7a99d522",
+      "size": 599
+    },
+    {
+      "path": "build/iteration_04_artifacts/business/models/Client.js",
+      "sha256": "313f5c806b0af7ad4b01bbcdb632f5d8a20ed9b04238246e90f894bc555e0bdf",
+      "size": 1327
+    },
+    {
+      "path": "build/iteration_04_artifacts/business/models/Assessment.js",
+      "sha256": "84a0f822d3a364d2ad0b641804eadab9a740f6269cc61fff30acc96e66b178db",
+      "size": 1448
+    },
+    {
+      "path": "build/iteration_04_artifacts/business/models/KPI.js",
+      "sha256": "f3350d5abad93caaed0d23dccd34c6ce222488692b49df0dd9c6611da3c5063e",
+      "size": 6688
+    },
+    {
+      "path": "build/iteration_04_artifacts/business/models/Report.js",
+      "sha256": "ee65c0686030e3779f11cb6fb732aa3f4c503fbba08107631c8baf7db62f7853",
+      "size": 1590
+    },
+    {
+      "path": "build/iteration_04_artifacts/business/components/ClientDashboard.jsx",
+      "sha256": "cefcad374ab032e4e69033ce0f07360f84ed0889abe03170d9d889ad5bd3f9a6",
+      "size": 8216
+    },
+    {
+      "path": "build/iteration_04_artifacts/business/components/AssessmentForm.jsx",
+      "sha256": "e60ea1abda3b6444a007bb48fb9f766dbc3a2fcfc6d81a6e4a4908db888fac7d",
+      "size": 9349
+    },
+    {
+      "path": "build/iteration_04_artifacts/business/services/ClientManagementService.js",
+      "sha256": "ad0fd601465d26d58d2844f5b4ce2678dbce35edd1f25d65f5445a1909e58f95",
+      "size": 4666
+    },
+    {
+      "path": "build/iteration_04_artifacts/business/services/ReportGeneratorService.js",
+      "sha256": "84850ab0d69d00178125500bf481e4218670b6ee617282f1e2c5ef056da4ddd8",
+      "size": 8638
+    },
+    {
+      "path": "build/iteration_04_artifacts/business/services/AssessmentService.js",
+      "sha256": "b7343d5d64aeb0016b1e370d490225694a392431118228738d822ca20318797e",
+      "size": 3789
+    },
+    {
+      "path": "build/iteration_04_artifacts/business/services/KPICalculationService.js",
+      "sha256": "f160e1f9d1a8cc8597e53a60099258d2fc42ca372aea5fae7c3b33a50581efc0",
+      "size": 4527
+    },
+    {
+      "path": "build/iteration_04_artifacts/tests/models/Assessment.test.js",
+      "sha256": "a7b8748f9ee909dcb1966d45e5a1353041698a1e3816e817e0e4e65594d901c0",
+      "size": 6555
+    },
+    {
+      "path": "build/iteration_04_artifacts/tests/services/AssessmentService.test.js",
+      "sha256": "17fa2d3dba589a741a4b5bfc410f5c23d2af579388a2f4e129efde154eeb0859",
+      "size": 11989
+    },
+    {
+      "path": "build/iteration_02_artifacts/build_state.json",
+      "sha256": "41f725eb942c6de32d9dbe633b6dbf4f06618dfddae8bbba17cc2d3cf67416fc",
+      "size": 115
+    },
+    {
+      "path": "build/iteration_02_artifacts/artifact_manifest.json",
+      "sha256": "e97d34ea1b779e2e9f5dfac845270117c262cc5db1ef6e0c6adb8ec20d277b68",
+      "size": 2294
+    },
+    {
+      "path": "build/iteration_02_artifacts/business/README-INTEGRATION.md",
+      "sha256": "2e013c328b58348ce60b381fede4d114b1da6bf8bd692eb0c4f8119e555a0775",
+      "size": 973
+    },
+    {
+      "path": "build/iteration_02_artifacts/business/package.json",
+      "sha256": "1ef66506a363ad19b124adfcd3f09703885c007b1aa61acf85d8e98dd839243c",
+      "size": 973
+    },
+    {
+      "path": "build/iteration_02_artifacts/business/config/features.json",
+      "sha256": "3b51347031bef98cb044e6663f7951fa0c027a47e6fec601aaa40d50645dfd66",
+      "size": 2762
+    },
+    {
+      "path": "build/iteration_02_artifacts/business/models/Client.js",
+      "sha256": "5a819ee8354b8edc13954111e724949fb1db177fad4bb2b1a744cc3e1f1155d1",
+      "size": 1681
+    },
+    {
+      "path": "build/iteration_02_artifacts/business/models/Report.js",
+      "sha256": "34cf0f72135ce82bcacc5387b2b23f7f067a1fc4cc6b4970dc5946b4b1511356",
+      "size": 1657
+    },
+    {
+      "path": "build/iteration_02_artifacts/business/models/KPIData.js",
+      "sha256": "5bf93b0371be0aee973faab1b8c838329bb35d3313e95948cd347033ed179b53",
+      "size": 1378
+    },
+    {
+      "path": "build/iteration_02_artifacts/business/components/ExecutiveDashboard.jsx",
+      "sha256": "464f772aeca7a218830daaf9f50f4f10b75f867c630b2f512137db63eafd1359",
+      "size": 7123
+    },
+    {
+      "path": "build/iteration_02_artifacts/business/components/KPIDataEntry.jsx",
+      "sha256": "d47b1503fba192ac8d43b490c037c566560f237eafc0fa8e449f0db4beac2543",
+      "size": 9497
+    },
+    {
+      "path": "build/iteration_02_artifacts/business/components/ClientProfile.jsx",
+      "sha256": "92e7b34a3b0622263b5539dadd87b940dc3d66ecc7f025ce651e3aab7b19e0a1",
+      "size": 7108
+    },
+    {
+      "path": "build/iteration_02_artifacts/business/services/ReportGenerationService.js",
+      "sha256": "9a7624752bbe8798e84dc3fb9a4293602bb810880485bc9084f011e294bd7164",
+      "size": 6581
+    },
+    {
+      "path": "build/iteration_02_artifacts/business/services/WorkdayService.js",
+      "sha256": "f792c54f6148a6ab11c5dc0cd78fcaa6d20acccac2d118725abb5bbb32e7471a",
+      "size": 1610
+    },
+    {
+      "path": "build/iteration_02_artifacts/business/services/BambooHRService.js",
+      "sha256": "d9a5565f486cfde7192b2e3263146637bda97c28472157c2321f477817dd121f",
+      "size": 1538
+    },
+    {
+      "path": "build/iteration_02_artifacts/business/services/KPICalculationService.js",
+      "sha256": "fddb25b0198dde75c159b9df769770310fecd40ea37c3770a8155acaaec4bf6b",
+      "size": 4183
+    }
+  ]
+}
