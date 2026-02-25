@@ -1,0 +1,8 @@
+{
+  "auth0_domain": "your-tenant.auth0.com",
+  "auth0_client_id": "REPLACE_ME",
+  "auth0_client_secret": "REPLACE_ME",
+  "auth0_audience": "https://your-tenant.auth0.com/api/v2/",
+  "account_name": "SaaS Boilerplate",
+  "log_level": "INFO"
+}

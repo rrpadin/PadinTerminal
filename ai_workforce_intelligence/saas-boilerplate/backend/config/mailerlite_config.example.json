@@ -1,0 +1,5 @@
+{
+  "mailerlite_api_key": "REPLACE_ME",
+  "account_name": "SaaS Boilerplate",
+  "log_level": "INFO"
+}
