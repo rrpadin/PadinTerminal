@@ -24,12 +24,19 @@ import logging
 
 # Import shared libraries
 import sys
-sys.path.append('../libs')
+_HERE = os.path.dirname(os.path.abspath(__file__))
+_LIB_PATH_CANDIDATES = [
+    os.path.normpath(os.path.join(_HERE, "../libs")),
+    os.path.normpath(os.path.join(_HERE, "../../teebu-shared-libs/lib")),
+]
+for _lib_path in _LIB_PATH_CANDIDATES:
+    if os.path.isdir(_lib_path) and _lib_path not in sys.path:
+        sys.path.append(_lib_path)
 
-from stripe_lib import load_stripe_lib
-from mailerlite_lib import load_mailerlite_lib
-from auth0_lib import load_auth0_lib
-from analytics_lib import load_analytics_lib
+from stripe_lib import load_stripe_lib, load_stripe_lib_from_dict
+from mailerlite_lib import load_mailerlite_lib, load_mailerlite_lib_from_dict
+from auth0_lib import load_auth0_lib, load_auth0_lib_from_dict
+from analytics_lib import load_analytics_lib, load_analytics_lib_from_dict
 
 # Import core modules
 from core.loader import load_business_routes, get_loaded_business_routes
@@ -105,15 +112,72 @@ logger = logging.getLogger(__name__)
 # CONFIGURATION
 # ============================================================
 
+def _resolve_config_path(config_name: str) -> str:
+    """
+    Prefer local config JSON; fall back to committed example config for deploy bootstrap.
+    """
+    config_dir = os.path.join(_HERE, "config")
+    primary = os.path.join(config_dir, config_name)
+    if os.path.exists(primary):
+        return primary
+
+    root, ext = os.path.splitext(config_name)
+    example = os.path.join(config_dir, f"{root}.example{ext}")
+    if os.path.exists(example):
+        logger.warning(f"{config_name} not found, falling back to {os.path.basename(example)}")
+        return example
+
+    raise FileNotFoundError(f"Missing config file: {config_name}")
+
+def _has_all_env_vars(names: List[str]) -> bool:
+    return all(os.getenv(name) for name in names)
+
 # Load business config
-with open('config/business_config.json', 'r') as f:
+with open(_resolve_config_path('business_config.json'), 'r') as f:
     BUSINESS_CONFIG = json.load(f)
 
 # Initialize libraries
-stripe = load_stripe_lib('config/stripe_config.json')
-mailer = load_mailerlite_lib('config/mailerlite_config.json')
-auth0 = load_auth0_lib('config/auth0_config.json')
-analytics = load_analytics_lib('config/analytics_config.json')
+if _has_all_env_vars(["STRIPE_SECRET_KEY"]):
+    stripe = load_stripe_lib_from_dict({
+        "stripe_secret_key": os.getenv("STRIPE_SECRET_KEY"),
+        "stripe_webhook_secret": os.getenv("STRIPE_WEBHOOK_SECRET"),
+        "account_name": BUSINESS_CONFIG["business"]["name"],
+        "log_level": os.getenv("STRIPE_LOG_LEVEL", "INFO"),
+    })
+else:
+    stripe = load_stripe_lib(_resolve_config_path('stripe_config.json'))
+
+if _has_all_env_vars(["MAILERLITE_API_KEY"]):
+    mailer = load_mailerlite_lib_from_dict({
+        "mailerlite_api_key": os.getenv("MAILERLITE_API_KEY"),
+        "account_name": BUSINESS_CONFIG["business"]["name"],
+        "log_level": os.getenv("MAILERLITE_LOG_LEVEL", "INFO"),
+    })
+else:
+    mailer = load_mailerlite_lib(_resolve_config_path('mailerlite_config.json'))
+
+if _has_all_env_vars(["AUTH0_DOMAIN", "AUTH0_CLIENT_ID", "AUTH0_CLIENT_SECRET"]):
+    auth0 = load_auth0_lib_from_dict({
+        "auth0_domain": os.getenv("AUTH0_DOMAIN"),
+        "auth0_client_id": os.getenv("AUTH0_CLIENT_ID"),
+        "auth0_client_secret": os.getenv("AUTH0_CLIENT_SECRET"),
+        "auth0_audience": os.getenv("AUTH0_AUDIENCE"),
+        "account_name": BUSINESS_CONFIG["business"]["name"],
+        "log_level": os.getenv("AUTH0_LOG_LEVEL", "INFO"),
+    })
+else:
+    auth0 = load_auth0_lib(_resolve_config_path('auth0_config.json'))
+
+if _has_all_env_vars(["GA4_MEASUREMENT_ID", "GA4_API_SECRET"]):
+    analytics = load_analytics_lib_from_dict({
+        "ga4_measurement_id": os.getenv("GA4_MEASUREMENT_ID"),
+        "ga4_api_secret": os.getenv("GA4_API_SECRET"),
+        "account_name": BUSINESS_CONFIG["business"]["name"],
+        "log_level": os.getenv("ANALYTICS_LOG_LEVEL", "INFO"),
+        "debug_mode": os.getenv("ANALYTICS_DEBUG_MODE", "false").lower() == "true",
+    })
+else:
+    analytics = load_analytics_lib(_resolve_config_path('analytics_config.json'))
 
 # ============================================================
 # FASTAPI APP

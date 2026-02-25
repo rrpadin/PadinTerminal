@@ -1,0 +1,6 @@
+{
+  "stripe_secret_key": "sk_live_REPLACE_ME",
+  "stripe_webhook_secret": "whsec_REPLACE_ME",
+  "account_name": "SaaS Boilerplate",
+  "log_level": "INFO"
+}
