@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-02-25T05:40:23.198636",
+  "intake_file": "intake/intake_runs/ai_workforce_intelligence/ai_workforce_intelligence.5.json",
+  "startup_id": "ai_workforce_intelligence",
+  "block": "B",
+  "deploy": false,
+  "tech_stack": "lowcode",
+  "effective_tech_stack": "lowcode",
+  "use_boilerplate": true,
+  "build_governance_zip": "/Users/teebuphilip/Documents/work/FounderOps/docs/architecture/BUILD/build_rules/FOBUILFINALLOCKED100.zip",
+  "deploy_governance_zip": null,
+  "platform_boilerplate_dir": "/Users/teebuphilip/Documents/work/teebu-saas-platform",
+  "cli_args": {
+    "intake_file": "intake/intake_runs/ai_workforce_intelligence/ai_workforce_intelligence.5.json",
+    "build_governance_zip": "/Users/teebuphilip/Documents/work/FounderOps/docs/architecture/BUILD/build_rules/FOBUILFINALLOCKED100.zip",
+    "deploy_governance_zip": "/Users/teebuphilip/Documents/work/FounderOps/docs/architecture/BUILD/deployment_rules/fo_deploy_governance_v1_2_CLARIFIED.zip",
+    "block_a": false,
+    "deploy": false
+  }
+}
